@@ -1,0 +1,72 @@
+<!doctype html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3d1820">
+  <title>阪急 車両位置</title>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="app.js?v=6" defer></script>
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="阪急 車両位置トップ">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-name"><strong>HANKYU</strong><small>RAILWAY LIVE</small></span>
+    </a>
+    <div class="connection">
+      <span class="live-dot" id="connectionDot"></span>
+      <span id="connectionText">阪急APIに接続中</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <p class="eyebrow">TRAIN POSITION</p>
+        <h1>阪急線 車両位置</h1>
+        <p class="intro-copy">路線を選ぶと、各駅と走行中の列車を確認できます。</p>
+      </div>
+      <div class="refresh-box">
+        <button class="refresh-button" id="refreshButton" type="button">
+          <span aria-hidden="true">↻</span> 更新
+        </button>
+        <label class="auto-refresh"><input id="autoRefresh" type="checkbox" checked> 30秒ごとに更新</label>
+      </div>
+    </section>
+
+    <nav class="line-tabs" id="lineTabs" aria-label="路線を選択"></nav>
+
+    <section class="line-heading" aria-live="polite">
+      <div>
+        <p class="eyebrow" id="lineCaption">路線を選択してください</p>
+        <h2 id="lineName">車両位置</h2>
+      </div>
+      <div class="update-time">
+        <span class="update-label">データ更新時刻</span>
+        <time id="updateTime">—</time>
+      </div>
+    </section>
+
+    <div class="notice" id="notice" role="status" hidden></div>
+    <section class="route-card" aria-label="駅と列車の位置">
+      <div class="route-card-head">
+        <div>
+          <span class="route-kicker">ROUTE MAP</span>
+          <h3 id="routeTitle">路線図</h3>
+        </div>
+        <span class="route-direction">駅間の列車も表示</span>
+      </div>
+      <div class="route-scroll">
+        <div class="route" id="route" aria-live="polite">
+          <div class="loading">路線情報を読み込んでいます…</div>
+        </div>
+      </div>
+      <div class="route-foot">
+        <span><i class="legend-dot legend-stop"></i>駅に停車中</span>
+        <span><i class="legend-dot legend-run"></i>駅間を走行中</span>
+        <span>表示は実際の運行状況と異なる場合があります。</span>
+      </div>
+    </section>
+
+    <footer>
+      <span>阪急電鉄の公式アプリが利用する車両位置データを表示しています。</span>
+      <a href="https://www.hankyu.co.jp/railinfo/" target="_blank" rel="noreferrer">公式運行情報 ↗</a>
+    </footer>
+  </main>

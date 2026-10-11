@@ -1,0 +1,16 @@
+/analysis/
+
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.netrc
+*.dpapi
+**/storage/*
+!**/storage/.htaccess
+
+*.bak-*
+**/live-before-*.html
+**/live-after-*.html
+**/published-v3-*
+**/verify-published-*.cjs

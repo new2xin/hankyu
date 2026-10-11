@@ -1,0 +1,77 @@
+{
+  "observed_at_utc": "2026-10-10T13:11:10.211073+00:00",
+  "android_app": {
+    "package": "jp.co.hankyu.tokkapp",
+    "version_name": "10.3.3",
+    "version_code": 98,
+    "decompiler": "JADX 1.5.6"
+  },
+  "apk_source": [
+    {
+      "artifact": "hankyu-line-app-10.3.3.xapk",
+      "bytes": 30306146,
+      "sha256": "9aea06af0b4a5fbca36c64dbf711bdbe23b61e2d5c48e3f06c64727ded5b1c19"
+    },
+    {
+      "artifact": "jp.co.hankyu.tokkapp.apk",
+      "bytes": 29770203,
+      "sha256": "5c1ff1f987c52381dbd7c77586ed64c4da81c2390cbb74592b2c25715fee63ed"
+    }
+  ],
+  "observed_webview_resources": [
+    {
+      "url": "https://cdn.hankyu-app.com/webview/train/position?line_id=1&station_id=1&dtype=android",
+      "http_status": 200,
+      "bytes": 2878,
+      "sha256": "43cd60c617065ea7d948bae152a87e6eac7b1e4c4fd31ff963c9bb68034f63f3"
+    },
+    {
+      "url": "https://cdn.hankyu-app.com/webview/_nuxt/0c80979.js",
+      "http_status": 200,
+      "bytes": 4271,
+      "sha256": "cc304a52c62f260dfc2521f4b096f8ffbe94963daa3d3f1c9b6ceb8c2759062d"
+    },
+    {
+      "url": "https://cdn.hankyu-app.com/webview/_nuxt/742ef81.js",
+      "http_status": 200,
+      "bytes": 152797,
+      "sha256": "1ddb5c8194c00e7aae8a224389323cd1c403c2f5819b21c04b02447d9ae6055f"
+    },
+    {
+      "url": "https://cdn.hankyu-app.com/webview/_nuxt/9ed9f69.js",
+      "http_status": 200,
+      "bytes": 21716,
+      "sha256": "260054f7a9183e1de68e52ef250c5f3ed60bd14831c5903558b3dced15346e48"
+    },
+    {
+      "url": "https://cdn.hankyu-app.com/webview/_nuxt/2cad377.js",
+      "http_status": 200,
+      "bytes": 58247,
+      "sha256": "7eac0d7e4e3f7803ef5ad121a2aa6dc897e908832d229fd0f0a07841f4314c02"
+    }
+  ],
+  "position_api_observation": {
+    "url": "https://cdn.hankyu-app.com/v1/train/positions/?train_position_line_id=1",
+    "http_status": 200,
+    "timestamp": "2026-10-10T22:10:50",
+    "state": "normal",
+    "positions_count": 15,
+    "response_sha256": "6181e2dde502578698b3b293bbcc1a90f8bf1df166f2f748270a2b97854c81e7",
+    "position_fields": [
+      "operation_number",
+      "destination",
+      "from_station",
+      "from_station_name",
+      "to_station",
+      "to_station_name",
+      "line_destination_id",
+      "delay",
+      "is_display_delay",
+      "train_kind_key",
+      "train_kind_name",
+      "direction",
+      "track_number",
+      "is_edge_station"
+    ]
+  }
+}

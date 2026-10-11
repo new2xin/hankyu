@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-10T22:10:50",
+  "state": "normal",
+  "positions": [
+    {
+      "operation_number": "8203",
+      "destination": "新開地",
+      "from_station": 1,
+      "from_station_name": "大阪梅田",
+      "to_station": null,
+      "to_station_name": null,
+      "line_destination_id": 33,
+      "delay": 0,
+      "is_display_delay": true,
+      "train_kind_key": "semi_limited_express",
+      "train_kind_name": "準特急",
+      "direction": 1,
+      "track_number": 9,
+      "is_edge_station": true
+    }
+  ]
+}
